@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RootProvider } from '@ks/reku';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RootProvider>
+      <App />
+    </RootProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
